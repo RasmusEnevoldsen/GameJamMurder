@@ -1,10 +1,12 @@
-﻿namespace GameJamMurderMystery
+﻿using GameJamMurderMystery.Events;
+
+namespace GameJamMurderMystery
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            new SampleEvent().Execute();
         }
     }
 }
